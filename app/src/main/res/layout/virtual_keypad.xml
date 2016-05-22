@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+    <Button
+        android:layout_width="@dimen/keypad_size"
+        android:layout_height="@dimen/keypad_size"
+        android:id="@+id/btn_keypad_left"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_keypad_up"
+        android:text="@string/btn_keypad_left"/>
+
+    <Button
+        android:layout_width="@dimen/keypad_size"
+        android:layout_height="@dimen/keypad_size"
+        android:id="@+id/btn_keypad_up"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/btn_keypad_left"
+        android:text="@string/btn_keypad_up"/>
+
+    <Button
+        android:layout_width="@dimen/keypad_size"
+        android:layout_height="@dimen/keypad_size"
+        android:id="@+id/btn_keypad_right"
+        android:layout_below="@id/btn_keypad_up"
+        android:layout_toRightOf="@id/btn_keypad_up"
+        android:text="@string/btn_keypad_right"/>
+
+    <Button
+        android:layout_width="@dimen/keypad_size"
+        android:layout_height="@dimen/keypad_size"
+        android:id="@+id/btn_keypad_down"
+        android:layout_below="@id/btn_keypad_right"
+        android:layout_toLeftOf="@id/btn_keypad_right"
+        android:text="@string/btn_keypad_down"/>
+
+    <Button
+        android:layout_width="@dimen/keypad_size"
+        android:layout_height="@dimen/keypad_size"
+        android:id="@+id/btn_keypad_fire"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/btn_keypad_left"
+        android:text="F"/>
+
+</RelativeLayout>

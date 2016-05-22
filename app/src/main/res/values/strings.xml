@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YASS</string>
+    <string name="game_title">YASS - Yet Another Space Shooter</string>
+    <string name="btn_start">START</string>
+    <string name="btn_pause">PAUSE</string>
+    <string name="btn_resume">RESUME</string>
+    <string name="btn_stop">STOP</string>
+    <string name="lbl_score">Score:</string>
+    <string name="pause_alert_title">Pause Game?</string>
+    <string name="pause_alert_message">Game is paused, do you wanna continue?</string>
+    <string name="btn_keypad_left">L</string>
+    <string name="btn_keypad_up">U</string>
+    <string name="btn_keypad_right">R</string>
+    <string name="btn_keypad_down">D</string>
+</resources>
