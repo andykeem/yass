@@ -22,7 +22,7 @@ public class Player extends Sprite {
     protected static final double DEFAULT_HIGHT = 400d;
     protected static final double DEFAULT_MOVE_UNIT = 100d;
     protected static final int TIME_BETWEEN_BULLETS = 100;
-    protected static final int NUM_BULLETS = 6;
+    protected static final int NUM_BULLETS = 4;
 
     protected double mSpeedFactor;
     protected int mMaxX, mMaxY;
@@ -91,7 +91,7 @@ public class Player extends Sprite {
 
     protected void initBulletPool() {
         for (int i = 0; i < NUM_BULLETS; i++) {
-            mBullets.add(new Bullet(mGameEngine, R.drawable.bullet));
+            mBullets.add(new Bullet(mGameEngine, R.drawable.bullet_bar));
         }
     }
 

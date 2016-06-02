@@ -13,10 +13,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.dev.yass.counter.YassBaseFragment;
+import com.example.dev.yass.engine.GameController;
 import com.example.dev.yass.engine.GameEngine;
 import com.example.dev.yass.engine.GameObject;
 import com.example.dev.yass.space.FPSCounter;
-import com.example.dev.yass.space.GameController;
+//import com.example.dev.yass.space.GameController;
 import com.example.dev.yass.space.JoystickController;
 import com.example.dev.yass.space.Player;
 import com.example.dev.yass.view.GameView;
@@ -54,8 +55,7 @@ public class GameFragment extends YassBaseFragment {
                 }
                 mGameEngine = new GameEngine(getActivity(), mGameView);
                 mGameEngine.setInputController(new JoystickController(getView()));
-                GameObject player = new Player(mGameEngine);
-                mGameEngine.addGameObject(player);
+                mGameEngine.addGameObject(new Player(mGameEngine));
                 mGameEngine.addGameObject(new FPSCounter(mGameEngine));
                 mGameEngine.addGameObject(new GameController(mGameEngine));
                 mGameEngine.startGame();

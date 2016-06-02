@@ -20,6 +20,7 @@ public abstract class Sprite extends GameObject {
     protected double mPosY;
 
     protected Context mContext;
+    protected GameEngine mGameEngine;
     protected double mPixelFactor;
     protected int mImgHeight;
     protected int mImgWidth;
@@ -28,9 +29,10 @@ public abstract class Sprite extends GameObject {
     protected Matrix mMatrix = new Matrix();
 
     protected Sprite(GameEngine engine, int drawableResId) {
-        mContext = engine.mContext;
-        mPixelFactor = engine.mPixelFactor;
-        Drawable drawable = ContextCompat.getDrawable(engine.mContext, drawableResId);
+        mGameEngine = engine;
+        mContext = mGameEngine.mContext;
+        mPixelFactor = mGameEngine.mPixelFactor;
+        Drawable drawable = ContextCompat.getDrawable(mContext, drawableResId);
 
         mImgHeight = (int) (drawable.getIntrinsicHeight() * mPixelFactor);
         mImgWidth = (int) (drawable.getIntrinsicWidth() * mPixelFactor);

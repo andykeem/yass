@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.dev.yass.counter.YassBaseFragment;
+import com.example.dev.yass.test.Test;
 
 import java.util.Random;
 
@@ -31,22 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.fragment_container, f, TAG_FRAGMENT)
                     .commit();
         }
-
-        /*Log.d(TAG, "PI: " + Math.PI);
-        Random rand = new Random();
-        String s = "";
-        for (int i = 0; i < 100; i++) {
-            int n = (int) (180 / Math.PI);
-            double angle = rand.nextInt(n) - 30;
-            s += angle + " | ";
-        }
-        Log.d(TAG, "angle: " + s);*/
-
-        Random rand = new Random();
-        double angle = (rand.nextDouble() * Math.PI / 3d) - Math.PI / 6d;
-        Log.d(TAG, "angle: " + angle);
-        Log.d(TAG, "cos(" + angle + "): " + Math.cos(angle));
-        Log.d(TAG, "sin(" + angle + "): " + Math.sin(angle));
+//        Test.test();
     }
 
     @Override
